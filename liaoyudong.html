@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>liaoyudong</title>
+</head>
+
+<body>
+    <h1>廖煜冬的网站</h1> 
+    <p>廖煜冬的代码学习 <b>Day 1</b></p>
+    <a href="https://www.runoob.com/html/html-basic.html">这是代码学习的网站</a>
+    <p><i>最近生活</i><br><i><u>运动</u></i></p>
+    <hr>
+    <img src="./image/WechatIMG525.jpg" width="150" height="200" />
+    <button type="button" onclick="alert('廖煜冬是天才!')">点我!</button>
+    <hr>
+    <form action="demo-form.php">
+        First name: <input type="text" name="FirstName" value="LIAO"><br>
+        Last name: <input type="text" name="LastName"><br>
+        <input type="submit" value="提交">
+    </form>
+    <hr>
+    <select>
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+    <hr>
+    <form action="demo_form.php">
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="male" value="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="sex" id="female" value="female"><br><br>
+        <input type="submit" value="提交">
+    </form>
+    <hr>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =<output name="x" for="a b"></output>
+    </form>
+    <hr>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" value="50">
+        +<input type="number" id="b" value="50">
+        =<output name="x" for="a b"></output>
+    </form>
+    <hr>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <hr>
+    <p>该段落文字从左到右显示。</p>
+    <p><bdo dir="rtl">该段落文字从右到左显示。</bdo></p>
+    <hr>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!
+    <p>
+    <p><s>My car is blue.</s></p>
+    <p>My new car is silver.</p>
+    <hr>
+    <p>Do not forget to buy <mark>milk</mark> today.
+    <p>
+        <hr><!--hr=horizontal line(水平线)-->
+    </p>
+    <p>展示给定的数据范围：</p>
+    <meter value="2" min="0" max="10">2 out of 10</meter><br><!--br=line break(换行标签)-->
+    <meter value="0.6">60%</meter>
+
+    <p><strong>注意：</strong> IE 浏览器不支持 meter 标签。</p>
+    <hr>
+
+    <textarea rows="10" cols="30">我是一个文本框。</textarea>
+    <hr>
+
+
+    <address>
+        Written by <a href="mailto:*******@qq.com">liaoyudong</a>.<br>
+        <!-- href属性是a标签的属性,用于定义页面间的超链接,支持在线地址、相对路径跳转及跳转到指定网页的指定位置-->
+        Example.com<br>
+        CHINA
+    </address>
+</body>
+
+</html>
