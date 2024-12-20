@@ -1,88 +1,173 @@
 <!DOCTYPE html>
+<!--document type 定义文本类型-->
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <!--定义关于文档的信息-->
+    <meta charset="utf-8" />
+    <!--定义关于html文档的元信息-->
     <title>liaoyudong</title>
-</head>
+    <style type="text/css">
+      h1 {
+        color: chocolate;
+      }
+    </style>
+    <!--定义文档样式信息-->
+  </head>
 
-<body>
-    <h1>廖煜冬的网站</h1> 
-    <p>廖煜冬的代码学习 <b>Day 1</b></p>
-    <a href="https://www.runoob.com/html/html-basic.html">这是代码学习的网站</a>
-    <p><i>最近生活</i><br><i><u>运动</u></i></p>
-    <hr>
-    <img src="./image/WechatIMG525.jpg" width="150" height="200" />
-    <button type="button" onclick="alert('廖煜冬是天才!')">点我!</button>
-    <hr>
+  <body>
+    <!--定义文档的主体(以下内容网页可见)-->
+    <h1>廖煜冬的网站</h1>
+    <hr />
+    <div style="color: cornflowerblue">
+      <h2>廖煜冬的代码学习 Day 1</h2>
+    </div>
+    <textarea name="学习内容" id="学习内容"></textarea>
+    学习进度：
+    <progress value="5" max="100"></progress>
+    <hr />
+    <div style="color: hotpink">
+      <h2>廖煜冬的代码学习 Day 2</h2>
+    </div>
+    <textarea name="学习内容" id="学习内容"></textarea>
+    学习进度：
+    <progress value="10" max="100"></progress>
+    <hr />
+    <iframe
+      src="https://www.runoob.com/"
+      name="iframe_a"
+      width="100%"
+      height="500"
+    ></iframe>
+    <p>
+      <a href="https://www.runoob.com/html/html-tutorial.html" target="iframe_a"
+        >RUNOOB.COM</a
+      >
+    </p>
+    <!--插入一个网站以框架显示-->
+    <a href="https://www.runoob.com/html/html-basic.html" target="_blank"
+      >这是代码学习的网站</a
+    ><!--a=定义一个连接 href=Hypertext Reference 制定超链接目标的URL,blank在新窗口或新标签中打开链接,self默认在当前窗口打开,parent在父框架中打开链接,top在整个窗口中打开链接,取消任何框架-->
+    <p>
+      <i>最近生活</i><br /><i><u>运动</u></i>
+    </p>
+    <!--p段落i斜体u下划线-->
+    <hr />
+    <img
+      src="./image/1.jpg"
+      width="150"
+      height="200"
+    /><!--image图片-->
+    <button type="button" onclick="alert('廖煜冬是天才!')">点我!</button
+    ><!--alert警示,会弹出提示框-->
+    <hr />
     <form action="demo-form.php">
-        First name: <input type="text" name="FirstName" value="LIAO"><br>
-        Last name: <input type="text" name="LastName"><br>
-        <input type="submit" value="提交">
+      <!--表格作用后传输到后面的地址-->
+      First name: <input type="text" name="FirstName" value="LIAO" /><br />
+      Last name: <input type="text" name="LastName" /><br />
+      <input type="submit" value="提交" />
     </form>
-    <hr>
+    <hr />
     <select>
-        <optgroup label="Swedish Cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-        </optgroup>
-        <optgroup label="German Cars">
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </optgroup>
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
     </select>
-    <hr>
+    <hr />
     <form action="demo_form.php">
-        <label for="male">Male</label>
-        <input type="radio" name="sex" id="male" value="male"><br>
-        <label for="female">Female</label>
-        <input type="radio" name="sex" id="female" value="female"><br><br>
-        <input type="submit" value="提交">
+      <label for="male">Male</label>
+      <input type="radio" name="sex" id="male" value="male" /><br />
+      <label for="female">Female</label>
+      <input type="radio" name="sex" id="female" value="female" /><br /><br />
+      <input type="submit" value="提交" />
     </form>
-    <hr>
-    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
-        <input type="range" id="a" value="50">100
-        +<input type="number" id="b" value="50">
-        =<output name="x" for="a b"></output>
-    </form>
-    <hr>
+    <hr />
     <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        <input type="number" id="a" value="50">
-        +<input type="number" id="b" value="50">
-        =<output name="x" for="a b"></output>
+      0<!--表格计算-->
+      <input type="range" id="a" value="50" />100 +<input
+        type="number"
+        id="b"
+        value="50"
+      />
+      =<output name="x" for="a b"></output>
     </form>
-    <hr>
-    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-    <hr>
+    <hr />
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="number" id="a" value="50" />
+      +<input type="number" id="b" value="50" /> =<output
+        name="x"
+        for="a b"
+      ></output>
+    </form>
+    <hr />
+    <p>
+      The <abbr title="World Health Organization">WHO</abbr> was founded in
+      1948.
+    </p>
+    <hr />
     <p>该段落文字从左到右显示。</p>
     <p><bdo dir="rtl">该段落文字从右到左显示。</bdo></p>
-    <hr>
-    <p>My favorite color is <del>blue</del> <ins>red</ins>!
-    <p>
+    <hr />
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+    <p></p>
     <p><s>My car is blue.</s></p>
     <p>My new car is silver.</p>
-    <hr>
-    <p>Do not forget to buy <mark>milk</mark> today.
-    <p>
-        <hr><!--hr=horizontal line(水平线)-->
-    </p>
+    <hr />
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <hr />
+    <!--hr=horizontal line(水平线)-->
     <p>展示给定的数据范围：</p>
-    <meter value="2" min="0" max="10">2 out of 10</meter><br><!--br=line break(换行标签)-->
+    <meter value="2" min="0" max="10">2 out of 10</meter
+    ><br /><!--br=line break(换行标签)-->
     <meter value="0.6">60%</meter>
 
     <p><strong>注意：</strong> IE 浏览器不支持 meter 标签。</p>
-    <hr>
+    <hr />
 
-    <textarea rows="10" cols="30">我是一个文本框。</textarea>
-    <hr>
+    <textarea rows="10" cols="30">我是一个文本框。</textarea
+    ><!--文本框-->
+    <hr />
+    <h4>无序列表:</h4>
+    <ul>
+      <!--unOrder list 无序列表-->
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <hr />
+    <ol>
+      <!--order list 有序列表-->
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
 
+    <ol start="50">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <hr />
+    <dl>
+      <!--definition list 定义一个定义列表-->
+      <dt>Coffee</dt>
+      <!--definition item 定义一个定义定义列表中的项目-->
+      <dd>Black hot drink</dd>
+      <!--definition describe 定义定义列表中项目的描述-->
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
+    <hr />
 
     <address>
-        Written by <a href="mailto:*******@qq.com">liaoyudong</a>.<br>
-        <!-- href属性是a标签的属性,用于定义页面间的超链接,支持在线地址、相对路径跳转及跳转到指定网页的指定位置-->
-        Example.com<br>
-        CHINA
+      Written by <a href="mailto:*******@qq.com">liaoyudong</a>.<br />
+      <!-- href属性是a标签的属性,用于定义页面间的超链接,支持在线地址、相对路径跳转及跳转到指定网页的指定位置-->
+      Example.com<br />
+      CHINA
     </address>
-</body>
-
+  </body>
 </html>
